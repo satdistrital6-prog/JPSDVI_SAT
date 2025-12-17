@@ -2,7 +2,7 @@
   <!DOCTYPE html>
     <html>
     <head>
-      <title>Análisis Estadístico Delictual semana del 10-11 al 24-11 - JPSD VI</title>
+      <title>Análisis Estadístico Delictual QUINCENAL del 25-11 al 16-12 - JPSD VI</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
@@ -66,15 +66,15 @@
 
         function drawChartDelitos() {
           var data = google.visualization.arrayToDataTable([
-            ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Robo', 22, 7],
-['Hurto Agra.', 13, 4],
-['Robo A/F', 8, 6],
-['Hurto', 8, 5],
-['Robo x Escala', 4, 4],
-['Robo Agra.', 7, 0],
-['Robo A/B', 2, 2],
-['Robo EGT', 1, 1]
+            ['Categoría', 'QUINCENAL 1', 'QUINCENAL 2'],
+            ['Robo', 13, 20],
+['Hurto', 12, 12],
+['Robo Agra.', 6, 16],
+['Hurto Agra.', 8, 7],
+['Robo A/F', 7, 8],
+['Robo A/B', 3, 1],
+['Robo x Escala', 3, 1],
+['Robo en Banda', 2, 0]
           ]);
           var options = {
             title: 'Análisis estadístico de los Delitos',
@@ -90,14 +90,14 @@
 
         function drawChartDias() {
           var data = google.visualization.arrayToDataTable([
-            ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Miércoles', 16, 4],
-['Jueves', 9, 7],
-['Lunes', 12, 3],
-['Martes', 6, 7],
-['Domingo', 9, 2],
-['Viernes', 7, 3],
-['Sábado', 6, 3]
+            ['Categoría', 'QUINCENAL 1', 'QUINCENAL 2'],
+            ['Martes', 17, 16],
+['Jueves', 10, 9],
+['Viernes', 11, 6],
+['Lunes', 3, 13],
+['Sábado', 5, 9],
+['Miércoles', 4, 6],
+['Domingo', 4, 6]
           ]);
           var options = {
             title: 'Análisis por Día de la Semana',
@@ -112,11 +112,11 @@
 
         function drawChartHorario() {
           var data = google.visualization.arrayToDataTable([
-            ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['🌆 Noche (18:00 - 23:59)', 17, 12],
-['🌙 Madrugada (00:00 - 05:59)', 16, 6],
-['🌤️ Mañana (06:00 - 11:59)', 17, 5],
-['☀️ Tarde (12:00 - 17:59)', 15, 6]
+            ['Categoría', 'QUINCENAL 1', 'QUINCENAL 2'],
+            ['🌆 Noche (18:00 - 23:59)', 15, 18],
+['🌙 Madrugada (00:00 - 05:59)', 9, 21],
+['☀️ Tarde (12:00 - 17:59)', 20, 9],
+['🌤️ Mañana (06:00 - 11:59)', 10, 17]
           ]);
           var options = {
             title: 'Análisis por Rango Horario',
@@ -133,21 +133,20 @@
 
         function drawChartDependencias() {
           var data = google.visualization.arrayToDataTable([
-            ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Cria_16', 25, 13],
-['Cria_25', 1, 0],
-['Cria_35', 6, 1],
-['Cria_36', 12, 4],
-['Cria_43', 0, 1],
-['Cria_56', 2, 0],
-['Cria_57', 4, 0],
-['Cria_58', 5, 2],
-['Cria_9', 3, 3],
+            ['Categoría', 'QUINCENAL 1', 'QUINCENAL 2'],
+            ['Cria_16', 18, 23],
+['Cria_17', 1, 1],
+['Cria_35', 2, 0],
+['Cria_36', 3, 7],
+['Cria_43', 4, 11],
+['Cria_56', 1, 3],
+['Cria_57', 2, 3],
+['Cria_58', 9, 9],
+['Cria_9', 6, 4],
 ['SC_Ceresoli', 2, 0],
-['SC_El Porvenir', 1, 2],
+['SC_El Porvenir', 1, 1],
 ['SC_Iriarte', 1, 0],
-['SC_Puebla', 2, 3],
-['SC_Sanchez', 1, 0]
+['SC_Puebla', 4, 3]
           ]);
           var options = {
             title: 'Análisis por Dependencia',
@@ -163,12 +162,13 @@
         
         function drawChartLugares() {
           var data = google.visualization.arrayToDataTable([
-            ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Vía Pública', 38, 16],
-['Domicilio', 20, 9],
-['Comercio', 6, 2],
-['Establecimiento Deportivo', 1, 1],
-['Interior taxi, Remis', 0, 1]
+            ['Categoría', 'QUINCENAL 1', 'QUINCENAL 2'],
+            ['Vía Pública', 30, 32],
+['Domicilio', 17, 28],
+['Comercio', 6, 3],
+['Interior Transporte Publico', 1, 0],
+['Establecimiento Deportivo', 0, 1],
+['Establecimiento Educativo', 0, 1]
           ]);
           var options = {
             title: 'Análisis por Tipo de Lugar',
@@ -185,48 +185,48 @@
     </head>
     <body>
       <div class="container">
-        <h1>Análisis Estadístico Delictual semana del 10-11 al 24-11 - JPSD VI</h1>
+        <h1>Análisis Estadístico Delictual QUINCENAL del 25-11 al 16-12 - JPSD VI</h1>
         <h2>📅 COMPARATIVA DEL PERÍODO</h2>
-        <p class="date-range">SEMANAL del 10/11/2025 al 17/11/2025 Vs. SEMANAL del 18/11/2025 al 24/11/2025</p>
+        <p class="date-range">QUINCENAL del 25/11/2025 al 5/12/2025 Vs. QUINCENAL del 6/12/2025 al 16/12/2025</p>
         
         
     <div class="summary-grid">
       <div class="summary-box">
         <div class="summary-title">Total Delitos</div>
-        <div class="summary-value">SEMANAL 1: 65 | SEMANAL 2: 29</div>
-        <div class="variation variation-down">▼ 55% (-36)</div>
+        <div class="summary-value">QUINCENAL 1: 54 | QUINCENAL 2: 65</div>
+        <div class="variation variation-up">▲ 20% (+11)</div>
       </div>
       <div class="summary-box">
       <div class="summary-title">Indicador de Estabilidad</div>
       <div class="summary-value">Baja</div>
       <div class="variation">La serie es irregular entre días; conviene monitorear picos y valles.</div>
-      <div style="font-size:11px;color:#555;margin-top:6px;">(CV=49% | ID=1.00 | fuera de control: 0/7 (límites ~ 0.0–10.2))</div>
+      <div style="font-size:11px;color:#555;margin-top:6px;">(CV=42% | ID=1.64 | fuera de control: 0/7 (límites ~ 0.1–18.4))</div>
       <div style="font-size:11px;color:#777;margin-top:2px;">Método: CV (coeficiente de variación), ID (índice de dispersión) y control ±3σ (límites basados en Poisson).</div>
 </div>
 
   
         <div class="summary-box">
           <div class="summary-title">Guaymallén Oeste</div>
-          <div class="summary-value">SEMANAL 1: 5 | SEMANAL 2: 0</div>
-          <div class="variation variation-down">▼ 100% (-5)</div>
+          <div class="summary-value">QUINCENAL 1: 2 | QUINCENAL 2: 3</div>
+          <div class="variation variation-up">▲ 50% (+1)</div>
         </div>
       
         <div class="summary-box">
           <div class="summary-title">Guaymallén Este</div>
-          <div class="summary-value">SEMANAL 1: 14 | SEMANAL 2: 6</div>
-          <div class="variation variation-down">▼ 57% (-8)</div>
+          <div class="summary-value">QUINCENAL 1: 17 | QUINCENAL 2: 13</div>
+          <div class="variation variation-down">▼ 24% (-4)</div>
         </div>
       
         <div class="summary-box">
           <div class="summary-title">Las Heras</div>
-          <div class="summary-value">SEMANAL 1: 39 | SEMANAL 2: 18</div>
-          <div class="variation variation-down">▼ 54% (-21)</div>
+          <div class="summary-value">QUINCENAL 1: 26 | QUINCENAL 2: 44</div>
+          <div class="variation variation-up">▲ 69% (+18)</div>
         </div>
       
         <div class="summary-box">
           <div class="summary-title">Lavalle</div>
-          <div class="summary-value">SEMANAL 1: 0 | SEMANAL 2: 0</div>
-          <div class="variation variation-stable">· 0%</div>
+          <div class="summary-value">QUINCENAL 1: 1 | QUINCENAL 2: 1</div>
+          <div class="variation variation-stable">· 0% (0)</div>
         </div>
       </div>
         
@@ -238,57 +238,57 @@
         <thead>
            <tr>
             <th>Categoría</th>
-            <th>SEMANAL 1</th>
-            <th>SEMANAL 2</th>
+            <th>QUINCENAL 1</th>
+            <th>QUINCENAL 2</th>
             <th>📊 Variación</th>
           </tr>
         </thead>
         <tbody>
           <tr>
               <td>Robo</td>
-              <td>22</td>
-              <td>7</td>
-              <td class="frio">▼ 68% (-15)</td>
-            </tr><tr>
-              <td>Hurto Agra.</td>
               <td>13</td>
-              <td>4</td>
-              <td class="frio">▼ 69% (-9)</td>
-            </tr><tr>
-              <td>Robo A/F</td>
-              <td>8</td>
-              <td>6</td>
-              <td class="frio">▼ 25% (-2)</td>
+              <td>20</td>
+              <td class="muy-caliente">▲ 54% (+7)</td>
             </tr><tr>
               <td>Hurto</td>
-              <td>8</td>
-              <td>5</td>
-              <td class="frio">▼ 38% (-3)</td>
-            </tr><tr>
-              <td>Robo x Escala</td>
-              <td>4</td>
-              <td>4</td>
-              <td class="neutro">· 0% (0)</td>
+              <td>12</td>
+              <td>12</td>
+              <td class="caliente">· 0% (0)</td>
             </tr><tr>
               <td>Robo Agra.</td>
+              <td>6</td>
+              <td>16</td>
+              <td class="muy-caliente">▲ 167% (+10)</td>
+            </tr><tr>
+              <td>Hurto Agra.</td>
+              <td>8</td>
               <td>7</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-7)</td>
+              <td class="neutro">▼ 13% (-1)</td>
+            </tr><tr>
+              <td>Robo A/F</td>
+              <td>7</td>
+              <td>8</td>
+              <td class="neutro">▲ 14% (+1)</td>
             </tr><tr>
               <td>Robo A/B</td>
-              <td>2</td>
-              <td>2</td>
-              <td class="neutro">· 0% (0)</td>
+              <td>3</td>
+              <td>1</td>
+              <td class="frio">▼ 67% (-2)</td>
             </tr><tr>
-              <td>Robo EGT</td>
+              <td>Robo x Escala</td>
+              <td>3</td>
               <td>1</td>
-              <td>1</td>
-              <td class="neutro">· 0% (0)</td>
+              <td class="frio">▼ 67% (-2)</td>
+            </tr><tr>
+              <td>Robo en Banda</td>
+              <td>2</td>
+              <td>0</td>
+              <td class="frio">▼ 100% (-2)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de delitos muestra una tendencia ▼ 55%. La mayor disminución fue en <strong>Robo Agra. (▼ 100% (-7))</strong>.</div>
+    <div class="conclusion">El análisis de delitos muestra una tendencia ▲ 20%. El mayor aumento se registró en <strong>Robo Agra. (▲ 167% (+10))</strong>. La mayor disminución fue en <strong>Robo en Banda (▼ 100% (-2))</strong>.</div>
   
         
     <div class="header">📅 ANÁLISIS POR DÍA DE LA SEMANA</div>
@@ -298,52 +298,52 @@
         <thead>
            <tr>
             <th>Categoría</th>
-            <th>SEMANAL 1</th>
-            <th>SEMANAL 2</th>
+            <th>QUINCENAL 1</th>
+            <th>QUINCENAL 2</th>
             <th>📊 Variación</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-              <td>Miércoles</td>
+              <td>Martes</td>
+              <td>17</td>
               <td>16</td>
-              <td>4</td>
-              <td class="frio">▼ 75% (-12)</td>
+              <td class="neutro">▼ 6% (-1)</td>
             </tr><tr>
               <td>Jueves</td>
+              <td>10</td>
               <td>9</td>
-              <td>7</td>
-              <td class="frio">▼ 22% (-2)</td>
-            </tr><tr>
-              <td>Lunes</td>
-              <td>12</td>
-              <td>3</td>
-              <td class="frio">▼ 75% (-9)</td>
-            </tr><tr>
-              <td>Martes</td>
-              <td>6</td>
-              <td>7</td>
-              <td class="neutro">▲ 17% (+1)</td>
-            </tr><tr>
-              <td>Domingo</td>
-              <td>9</td>
-              <td>2</td>
-              <td class="frio">▼ 78% (-7)</td>
+              <td class="neutro">▼ 10% (-1)</td>
             </tr><tr>
               <td>Viernes</td>
-              <td>7</td>
+              <td>11</td>
+              <td>6</td>
+              <td class="frio">▼ 45% (-5)</td>
+            </tr><tr>
+              <td>Lunes</td>
               <td>3</td>
-              <td class="frio">▼ 57% (-4)</td>
+              <td>13</td>
+              <td class="caliente">▲ 333% (+10)</td>
             </tr><tr>
               <td>Sábado</td>
+              <td>5</td>
+              <td>9</td>
+              <td class="caliente">▲ 80% (+4)</td>
+            </tr><tr>
+              <td>Miércoles</td>
+              <td>4</td>
               <td>6</td>
-              <td>3</td>
-              <td class="frio">▼ 50% (-3)</td>
+              <td class="caliente">▲ 50% (+2)</td>
+            </tr><tr>
+              <td>Domingo</td>
+              <td>4</td>
+              <td>6</td>
+              <td class="caliente">▲ 50% (+2)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de días de la semana muestra una tendencia ▼ 55%. El mayor aumento se registró en <strong>Martes (▲ 17% (+1))</strong>. La mayor disminución fue en <strong>Domingo (▼ 78% (-7))</strong>.</div>
+    <div class="conclusion">El análisis de días de la semana muestra una tendencia ▲ 20%. El mayor aumento se registró en <strong>Lunes (▲ 333% (+10))</strong>. La mayor disminución fue en <strong>Viernes (▼ 45% (-5))</strong>.</div>
   
         
     <div class="header">🕒 ANÁLISIS POR RANGO HORARIO</div>
@@ -353,37 +353,37 @@
         <thead>
            <tr>
             <th>Categoría</th>
-            <th>SEMANAL 1</th>
-            <th>SEMANAL 2</th>
+            <th>QUINCENAL 1</th>
+            <th>QUINCENAL 2</th>
             <th>📊 Variación</th>
           </tr>
         </thead>
         <tbody>
           <tr>
               <td>🌆 Noche (18:00 - 23:59)</td>
-              <td>17</td>
-              <td>12</td>
-              <td class="frio">▼ 29% (-5)</td>
+              <td>15</td>
+              <td>18</td>
+              <td class="caliente">▲ 20% (+3)</td>
             </tr><tr>
               <td>🌙 Madrugada (00:00 - 05:59)</td>
-              <td>16</td>
-              <td>6</td>
-              <td class="frio">▼ 63% (-10)</td>
-            </tr><tr>
-              <td>🌤️ Mañana (06:00 - 11:59)</td>
-              <td>17</td>
-              <td>5</td>
-              <td class="frio">▼ 71% (-12)</td>
+              <td>9</td>
+              <td>21</td>
+              <td class="muy-caliente">▲ 133% (+12)</td>
             </tr><tr>
               <td>☀️ Tarde (12:00 - 17:59)</td>
-              <td>15</td>
-              <td>6</td>
-              <td class="frio">▼ 60% (-9)</td>
+              <td>20</td>
+              <td>9</td>
+              <td class="frio">▼ 55% (-11)</td>
+            </tr><tr>
+              <td>🌤️ Mañana (06:00 - 11:59)</td>
+              <td>10</td>
+              <td>17</td>
+              <td class="muy-caliente">▲ 70% (+7)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de rangos horarios muestra una tendencia ▼ 55%. La mayor disminución fue en <strong>🌤️ Mañana (06:00 - 11:59) (▼ 71% (-12))</strong>.</div>
+    <div class="conclusion">El análisis de rangos horarios muestra una tendencia ▲ 20%. El mayor aumento se registró en <strong>🌙 Madrugada (00:00 - 05:59) (▲ 133% (+12))</strong>. La mayor disminución fue en <strong>☀️ Tarde (12:00 - 17:59) (▼ 55% (-11))</strong>.</div>
   
         
     <div class="header">📍 ANÁLISIS POR DEPENDENCIA</div>
@@ -393,57 +393,57 @@
         <thead>
            <tr>
             <th>Categoría</th>
-            <th>SEMANAL 1</th>
-            <th>SEMANAL 2</th>
+            <th>QUINCENAL 1</th>
+            <th>QUINCENAL 2</th>
             <th>📊 Variación</th>
           </tr>
         </thead>
         <tbody>
           <tr>
               <td>Cria_16</td>
-              <td>25</td>
-              <td>13</td>
-              <td class="frio">▼ 48% (-12)</td>
+              <td>18</td>
+              <td>23</td>
+              <td class="muy-caliente">▲ 28% (+5)</td>
             </tr><tr>
-              <td>Cria_25</td>
+              <td>Cria_17</td>
               <td>1</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-1)</td>
+              <td>1</td>
+              <td class="neutro">· 0% (0)</td>
             </tr><tr>
               <td>Cria_35</td>
-              <td>6</td>
-              <td>1</td>
-              <td class="frio">▼ 83% (-5)</td>
-            </tr><tr>
-              <td>Cria_36</td>
-              <td>12</td>
-              <td>4</td>
-              <td class="frio">▼ 67% (-8)</td>
-            </tr><tr>
-              <td>Cria_43</td>
-              <td>0</td>
-              <td>1</td>
-              <td class="caliente">nuevo registro (+1)</td>
-            </tr><tr>
-              <td>Cria_56</td>
               <td>2</td>
               <td>0</td>
               <td class="frio">▼ 100% (-2)</td>
             </tr><tr>
-              <td>Cria_57</td>
+              <td>Cria_36</td>
+              <td>3</td>
+              <td>7</td>
+              <td class="caliente">▲ 133% (+4)</td>
+            </tr><tr>
+              <td>Cria_43</td>
               <td>4</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-4)</td>
+              <td>11</td>
+              <td class="caliente">▲ 175% (+7)</td>
+            </tr><tr>
+              <td>Cria_56</td>
+              <td>1</td>
+              <td>3</td>
+              <td class="caliente">▲ 200% (+2)</td>
+            </tr><tr>
+              <td>Cria_57</td>
+              <td>2</td>
+              <td>3</td>
+              <td class="caliente">▲ 50% (+1)</td>
             </tr><tr>
               <td>Cria_58</td>
-              <td>5</td>
-              <td>2</td>
-              <td class="frio">▼ 60% (-3)</td>
+              <td>9</td>
+              <td>9</td>
+              <td class="neutro">· 0% (0)</td>
             </tr><tr>
               <td>Cria_9</td>
-              <td>3</td>
-              <td>3</td>
-              <td class="neutro">· 0% (0)</td>
+              <td>6</td>
+              <td>4</td>
+              <td class="frio">▼ 33% (-2)</td>
             </tr><tr>
               <td>SC_Ceresoli</td>
               <td>2</td>
@@ -452,8 +452,8 @@
             </tr><tr>
               <td>SC_El Porvenir</td>
               <td>1</td>
-              <td>2</td>
-              <td class="caliente">▲ 100% (+1)</td>
+              <td>1</td>
+              <td class="neutro">· 0% (0)</td>
             </tr><tr>
               <td>SC_Iriarte</td>
               <td>1</td>
@@ -461,19 +461,14 @@
               <td class="frio">▼ 100% (-1)</td>
             </tr><tr>
               <td>SC_Puebla</td>
-              <td>2</td>
+              <td>4</td>
               <td>3</td>
-              <td class="caliente">▲ 50% (+1)</td>
-            </tr><tr>
-              <td>SC_Sanchez</td>
-              <td>1</td>
-              <td>0</td>
-              <td class="frio">▼ 100% (-1)</td>
+              <td class="frio">▼ 25% (-1)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de dependencias muestra una tendencia ▼ 55%. El mayor aumento se registró en <strong>Cria_43 (nuevo registro (+1))</strong>. La mayor disminución fue en <strong>Cria_25 (▼ 100% (-1))</strong>.</div>
+    <div class="conclusion">El análisis de dependencias muestra una tendencia ▲ 20%. El mayor aumento se registró en <strong>Cria_56 (▲ 200% (+2))</strong>. La mayor disminución fue en <strong>Cria_35 (▼ 100% (-2))</strong>.</div>
   
         
     <div class="header">🏠 ANÁLISIS POR TIPO DE LUGAR</div>
@@ -483,34 +478,39 @@
         <thead>
            <tr>
             <th>Categoría</th>
-            <th>SEMANAL 1</th>
-            <th>SEMANAL 2</th>
+            <th>QUINCENAL 1</th>
+            <th>QUINCENAL 2</th>
             <th>📊 Variación</th>
           </tr>
         </thead>
         <tbody>
           <tr>
               <td>Vía Pública</td>
-              <td>38</td>
-              <td>16</td>
-              <td class="frio">▼ 58% (-22)</td>
+              <td>30</td>
+              <td>32</td>
+              <td class="caliente">▲ 7% (+2)</td>
             </tr><tr>
               <td>Domicilio</td>
-              <td>20</td>
-              <td>9</td>
-              <td class="frio">▼ 55% (-11)</td>
+              <td>17</td>
+              <td>28</td>
+              <td class="muy-caliente">▲ 65% (+11)</td>
             </tr><tr>
               <td>Comercio</td>
               <td>6</td>
-              <td>2</td>
-              <td class="frio">▼ 67% (-4)</td>
+              <td>3</td>
+              <td class="frio">▼ 50% (-3)</td>
+            </tr><tr>
+              <td>Interior Transporte Publico</td>
+              <td>1</td>
+              <td>0</td>
+              <td class="frio">▼ 100% (-1)</td>
             </tr><tr>
               <td>Establecimiento Deportivo</td>
+              <td>0</td>
               <td>1</td>
-              <td>1</td>
-              <td class="neutro">· 0% (0)</td>
+              <td class="caliente">nuevo registro (+1)</td>
             </tr><tr>
-              <td>Interior taxi, Remis</td>
+              <td>Establecimiento Educativo</td>
               <td>0</td>
               <td>1</td>
               <td class="caliente">nuevo registro (+1)</td>
@@ -518,7 +518,7 @@
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de tipos de lugar muestra una tendencia ▼ 55%. El mayor aumento se registró en <strong>Interior taxi, Remis (nuevo registro (+1))</strong>. La mayor disminución fue en <strong>Comercio (▼ 67% (-4))</strong>.</div>
+    <div class="conclusion">El análisis de tipos de lugar muestra una tendencia ▲ 20%. El mayor aumento se registró en <strong>Establecimiento Deportivo (nuevo registro (+1))</strong>. La mayor disminución fue en <strong>Interior Transporte Publico (▼ 100% (-1))</strong>.</div>
   
 
         <!-- NUEVO: TABLA POR JEFATURA/GRUPO -->
@@ -529,8 +529,8 @@
         <thead>
           <tr>
             <th>Jefatura</th>
-            <th>SEMANAL 1</th>
-            <th>SEMANAL 2</th>
+            <th>QUINCENAL 1</th>
+            <th>QUINCENAL 2</th>
             <th>📊 Variación</th>
           </tr>
         </thead>
@@ -538,27 +538,27 @@
           
       <tr>
         <td>Guaymallén Oeste</td>
-        <td>5</td>
-        <td>0</td>
-        <td class="variation-down">▼ 100% (-5)</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="variation-up">▲ 50% (+1)</td>
       </tr>
       <tr>
         <td>Guaymallén Este</td>
-        <td>14</td>
-        <td>6</td>
-        <td class="variation-down">▼ 57% (-8)</td>
+        <td>17</td>
+        <td>13</td>
+        <td class="variation-down">▼ 24% (-4)</td>
       </tr>
       <tr>
         <td>Las Heras</td>
-        <td>39</td>
-        <td>18</td>
-        <td class="variation-down">▼ 54% (-21)</td>
+        <td>26</td>
+        <td>44</td>
+        <td class="variation-up">▲ 69% (+18)</td>
       </tr>
       <tr>
         <td>Lavalle</td>
-        <td>0</td>
-        <td>0</td>
-        <td class="variation-stable">· 0%</td>
+        <td>1</td>
+        <td>1</td>
+        <td class="variation-stable">· 0% (0)</td>
       </tr>
         </tbody>
       </table>
@@ -566,14 +566,14 @@
 
         <hr style="border: 1px solid #eee;">
         <div class="conclusion">
-          <p><strong>🏁 CONCLUSIÓN GENERAL:</strong> En conclusión, el período muestra un/a **disminución (▼ 55% (-36))** en la totalidad de hechos delictivos. Se recomienda prestar especial atención a las tendencias identificadas en los análisis detallados.</p>
+          <p><strong>🏁 CONCLUSIÓN GENERAL:</strong> En conclusión, el período muestra un/a **aumento (▲ 20% (+11))** en la totalidad de hechos delictivos. Se recomienda prestar especial atención a las tendencias identificadas en los análisis detallados.</p>
           
   <div class="header">Diagnóstico automático</div>
   <div style="border:1px solid #ddd;border-radius:8px;padding:14px;background:#fff;margin:10px 0;">
     <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;">
       <div style="flex:1;min-width:280px">
         <div style="font-weight:bold;font-size:14px;margin-bottom:6px;">Indicador de Estabilidad: Baja</div>
-        <div style="font-size:12px;color:#555;">CV=49% | ID=1.00 | fuera de control: 0/7 (límites ~ 0.0–10.2)</div>
+        <div style="font-size:12px;color:#555;">CV=42% | ID=1.64 | fuera de control: 0/7 (límites ~ 0.1–18.4)</div>
       </div>
       <div style="flex:1;min-width:300px">
     <div style="position:relative;margin-top:4px;">
@@ -651,44 +651,44 @@
       <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;">
         
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Domingo: 2"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.2857142857142857);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Domingo: 6"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.375);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Dom</div>
       </div>
     
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Lunes: 3"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.42857142857142855);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Lunes: 13"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.8125);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Lun</div>
       </div>
     
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Martes: 7"
+        <div title="Martes: 16"
              style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 1);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Mar</div>
       </div>
     
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Miércoles: 4"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.5714285714285714);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Miércoles: 6"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.375);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Mié</div>
       </div>
     
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Jueves: 7"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 1);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Jueves: 9"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.5625);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Jue</div>
       </div>
     
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Viernes: 3"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.42857142857142855);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Viernes: 6"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.375);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Vie</div>
       </div>
     
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Sábado: 3"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.42857142857142855);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Sábado: 9"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.5625);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Sáb</div>
       </div>
     
@@ -708,26 +708,26 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px; margin-bottom:8px;">
       <div>
         <div style="font-size:12px;color:#555;margin-bottom:4px;">Días destacados</div>
-        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Jueves</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Martes</span>
+        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Martes</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Lunes</span>
       </div>
       <div>
         <div style="font-size:12px;color:#555;margin-bottom:4px;">Rangos horarios destacados</div>
-        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">🌆 Noche (18:00 - 23:59)</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">🌙 Madrugada (00:00 - 05:59)</span>
+        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">🌙 Madrugada (00:00 - 05:59)</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">🌆 Noche (18:00 - 23:59)</span>
       </div>
       <div>
         <div style="font-size:12px;color:#555;margin-bottom:4px;">Dependencias destacadas</div>
-        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Cria_16</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Cria_36</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Cria_43</span>
+        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Cria_16</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Cria_43</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Cria_56</span>
       </div>
       <div>
         <div style="font-size:12px;color:#555;margin-bottom:4px;">Tipos de lugar destacados</div>
-        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Vía Pública</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Domicilio</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Interior taxi, Remis</span>
+        <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Vía Pública</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Domicilio</span> <span style="display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;color:#1e3a8a;padding:4px 8px;border-radius:999px;font-size:11px;margin:2px;">Establecimiento Deportivo</span>
       </div>
     </div>
 
     <div style="font-size:12px;color:#333;margin-top:6px;">
       <b>Sugerencias:</b>
       <ul style="list-style:none;margin:6px 0 0 0;padding-left:0;">
-        <li style="margin-bottom:4px;">Refuerzo focal en **Cria_16** durante **🌆 Noche (18:00 - 23:59)** con patrullaje visible y contacto con referentes barriales.</li><li style="margin-bottom:4px;">Prevención situacional en **Vía Pública**: iluminación, cierres, cámaras/vecinales y controles dinámicos.</li><li style="margin-bottom:4px;">Alerta temprana: si el **Martes** supera los límites ±3σ, activar refuerzo por 48 h e intensificar supervisión.</li><li style="margin-bottom:4px;">Coordinación con **Cria_16** para retroalimentar modus operandi y ajustar rutas/cuadrantes.</li><li style="margin-bottom:4px;">Plan de comunicación y presencia selectiva en puntos calientes para disuasión temprana.</li><li style="margin-bottom:4px;">Revisión de aprehensiones y causas recientes para identificar reincidencias y zonas de oportunidad investigativa.</li>
+        <li style="margin-bottom:4px;">Refuerzo focal en **Cria_16** durante **🌙 Madrugada (00:00 - 05:59)** con patrullaje visible y contacto con referentes barriales.</li><li style="margin-bottom:4px;">Prevención situacional en **Vía Pública**: iluminación, cierres, cámaras/vecinales y controles dinámicos.</li><li style="margin-bottom:4px;">Alerta temprana: si el **Lunes** supera los límites ±3σ, activar refuerzo por 48 h e intensificar supervisión.</li><li style="margin-bottom:4px;">Coordinación con **Cria_16** para retroalimentar modus operandi y ajustar rutas/cuadrantes.</li><li style="margin-bottom:4px;">Plan de comunicación y presencia selectiva en puntos calientes para disuasión temprana.</li><li style="margin-bottom:4px;">Revisión de aprehensiones y causas recientes para identificar reincidencias y zonas de oportunidad investigativa.</li>
       </ul>
       <div style="font-size:11px;color:#777;margin-top:8px;">
         <em>Nota:</em> “Destacados” considera volumen reciente y dinámica (variación positiva) como referencia operativa.
